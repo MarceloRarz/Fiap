@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", 
+    "noUnusedLocals": true, // A regra impede o uso de variáveis que não serão usadas no código
+    "strictNullChecks": true, // A regra strictNullChecks força a verificação de valores nulos ou indefinidos, ajudando a evitar erros de tempo de execução 
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noEmitOnError": false, // impede a geração de arquivo js caso haja erro no transpilador
+    "outDir": "./build", // Diretorio de saida
+    "strict": false    
+  },
+  "include": ["./src/**/*", "server.ts"] // Tudo que estiver dentro de src vai ser compilado e o arquivo server.ts
+}
